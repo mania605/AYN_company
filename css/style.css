@@ -34,6 +34,52 @@ body {
   background: #efefef;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0);
+}
+
+main {
+  padding: 10vh 15vw;
+}
+main h2 {
+  font: 100 7vmax/1 "raleway";
+  color: #333;
+  margin-bottom: 50px;
+}
+main p {
+  font: 1.1rem/1.3 "arial";
+  color: #999;
+  margin-bottom: 20px;
+}
+main .breadcrumb {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font: 400 0.8rem/1 "raleway";
+}
+main .breadcrumb li:last-child {
+  font-weight: 700;
+}
+main .con {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  margin-top: 80px;
+}
+
 header {
   width: 100%;
   padding: 20px 15vw;
@@ -113,6 +159,63 @@ header button {
 @media screen and (max-width: 499px) {
   header h1 {
     font-size: 1.2rem;
+  }
+}
+footer {
+  width: 100%;
+  padding: 100px 15vw;
+  background: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer h1 {
+  font: 600 1.3rem/1 "orbitron";
+  color: #888;
+  display: flex;
+  align-items: flex-end;
+}
+footer article {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer article ul {
+  width: 100%;
+  color: #777;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+footer article p {
+  display: flex;
+  width: 100%;
+  color: #888;
+  justify-content: flex-end;
+  letter-spacing: 2px;
+  font: 400 0.8rem/1 "orbitron";
+}
+
+@media screen and (max-width: 999px) {
+  footer {
+    padding: 80px 10vw;
+  }
+}
+@media screen and (max-width: 499px) {
+  footer {
+    padding: 60px 10vw;
+  }
+  footer article {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer article ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  footer article p {
+    justify-content: flex-start;
   }
 }
 

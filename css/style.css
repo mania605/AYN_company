@@ -1,18 +1,95 @@
-/* Error: expected "}".
- *    ,
- * 68 |     }
- *    |      ^
- *    '
- *   scss\common\_header.scss 68:3  @import
- *   scss\style.scss 9:9            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 68 \2502      }\d\a    \2502       ^\a    \2575 \a   scss\\common\\_header.scss 68:3  @import\a   scss\\style.scss 9:9            root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+.hide {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+input,
+textarea {
+  outline: 0;
+}
+
+header {
+  width: 100%;
+  padding: 20px 15vw 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header h1 {
+  font: 600 1.6rem/1 "orbitron";
+  letter-spacing: 1px;
+  color: #222;
+  display: flex;
+  align-items: flex-end;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav #gnb {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  justify-content: flex-end;
+  order: 2;
+  font: 500 0.8rem/1 "orbitron";
+  letter-spacing: 1px;
+  color: #333;
+}
+header nav .sns {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  order: 1;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+header button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -59,7 +59,7 @@ textarea {
 
 header {
   width: 100%;
-  padding: 5vh 15vw;
+  padding: 14px 15vw 20px;
   border-bottom: 1px solid #ddd;
   display: flex;
   flex-wrap: wrap;
@@ -80,19 +80,21 @@ header nav #gnb {
   width: 100%;
   display: flex;
   gap: 60px;
+  justify-content: flex-end;
   order: 2;
-  font: 400 0.8rem/1 "orbitron";
-  letter-spacing: 1;
+  font: 500 0.8rem/1 "orbitron";
+  letter-spacing: 1px;
   color: #333;
 }
 header nav .sns {
   width: 100%;
   display: flex;
-  gap: 30px;
-  justify-content: content-end;
+  gap: 20px;
+  justify-content: flex-end;
   order: 1;
   margin-bottom: 20px;
   font-size: 0.8rem;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
